@@ -1,0 +1,56 @@
+//#define DIMX 1920
+//#define DIMY 1080
+//
+//struct CuComplex {
+//	float r;
+//	float i;
+//
+//	__device__ CuComplex(float a, float b) :r(a), i(b) {}
+//	__device__ float magnitude2(void) {
+//		return r * r + i * i;
+//	}
+//
+//	__device__ CuComplex operator*(const CuComplex& a)
+//	{
+//		return CuComplex(r*a.r - i * a.i, i*a.r + r * a.i);
+//	}
+//
+//	__device__ CuComplex operator+(const CuComplex& a)
+//	{
+//		return CuComplex(r + a.r, i + a.i);
+//	}
+//};
+//
+//
+//__device__ int julia(int x, int y)
+//{
+//	const float scale = 1.5;
+//	float jx = scale * (float)(DIMX / 2 - x) / (DIMX / 2);
+//	float jy = scale * (float)(DIMY / 2 - y) / (DIMY / 2);
+//
+//	CuComplex c(-0.8, 0.154);
+//	CuComplex a(jx, jy);
+//
+//	int i = 0;
+//	for (i = 0; i < 200; i++)
+//	{
+//		a = a * a + c;
+//		if (a.magnitude2() > 1000)
+//			return 0;
+//	}
+//	return 1;
+//}
+//
+//__global__ void kernel(unsigned char *ptr)
+//{
+//	int x = blockIdx.x;
+//	int y = blockIdx.y;
+//	int offset = x + y * gridDim.x;
+//
+//	int juliaValue = julia(x, y);
+//	ptr[offset * 4 + 0] = 0;
+//	ptr[offset * 4 + 1] = 255 * juliaValue;
+//	ptr[offset * 4 + 2] = 0;
+//	ptr[offset * 4 + 3] = 255;
+//
+//}

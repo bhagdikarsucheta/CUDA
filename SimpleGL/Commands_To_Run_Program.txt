@@ -1,0 +1,14 @@
+Commands -
+Open VS X64 bit Command Propmt and give following commands -
+
+nvcc.exe -c -o SineWave.obj SineWave.cu
+----Above will create .obj of CUDA Kernel
+
+cl.exe /c /EHsc SineWave.cpp
+-----Above command will create .obj of our .cpp file of OpenGL-Interop
+
+link.exe SinWave.obj Lights_Blinn_Fragment.obj /SUBSYSTEM:WINDOWS /LIBPATH:"glew32.lib" "user32.lib" "gdi32.lib" "kernel32.lib"
+-----Above command will link 2 .obj files and create final .exe file
+
+
+

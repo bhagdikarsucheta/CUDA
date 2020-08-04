@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.705
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Trial_simpleGL", "Trial_simpleGL.vcxproj", "{546B62A5-9E86-4B94-8B32-0315363C7B41}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{546B62A5-9E86-4B94-8B32-0315363C7B41}.Debug|x64.ActiveCfg = Debug|x64
+		{546B62A5-9E86-4B94-8B32-0315363C7B41}.Debug|x64.Build.0 = Debug|x64
+		{546B62A5-9E86-4B94-8B32-0315363C7B41}.Release|x64.ActiveCfg = Release|x64
+		{546B62A5-9E86-4B94-8B32-0315363C7B41}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2C8E536A-59ED-4DCC-B2E4-70068DAC9A5F}
+	EndGlobalSection
+EndGlobal
